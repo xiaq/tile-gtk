@@ -14,5 +14,3 @@ You may want to visit the [original project][2] site.
 [1]: http://www.tclcommunityassociation.org/wub/proceedings/Proceedings-2010/GeorgePetasis/TileQtAndTileGTK.pdf
 
 [2]: http://www.ellogon.org/petasis/tcltk-projects/tilegtk
-
-<!-- vi: se ft=markdown: -->
