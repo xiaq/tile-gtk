@@ -1,0 +1,73 @@
+22 Jul 2012  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * library/tilegtk.tcl: Added support for Linux 64.
+
+  * generic/tileGtk_Init.cpp:
+  * library/GenarateSymbols.tcl: Switched dynamic library loading from GLib,
+  to Tcl (Tcl_LoadFile, Tcl_FindSymbol).
+
+  * CMakeLists.txt: CMake (2.8.8) can now find GTK2, reverted our module to
+  the official one.
+
+30 Sep 2010  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * demos/WidgetStates.tcl:
+  * demos/demo.tcl:
+  * demos/dirbrowser.tcl:
+  * demos/dlgtest.tcl: Minor updates for supporting Tk 8.6.
+
+08 Aug 2009  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * generic/tileGtk_ToolButton.cpp: Fixes in tool button drawing code.
+
+01 Jul 2009  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * generic/tileGtk_Combobox.cpp:
+  * generic/tileGtk_Menubutton.cpp:
+  * generic/tileGtk_Scrollbar.cpp: Applied the scaling required by GTK+
+  arrows.
+
+20 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * generic/tileGtk_Button.cpp:
+  * generic/tileGtk_CheckButton.cpp:
+  * generic/tileGtk_RadioButton.cpp: Reworked button drawing to be identical
+  to the drawing done by GTK+.
+
+13 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * generic/tileGtk_Utilities.h:
+  * generic/tileGtk_Utilities.cpp:
+  * generic/*.cpp: Added the ability to adapt to style changes!
+
+  * generic/tileGtk_GtkApp.cpp: Added support for installing an XError
+  handler, overidiing the one installed by GTK+.
+
+11 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * demos/StyleInstrospection.tcl: Updated.
+
+  * cmake/Modules/FindGTK2.cmake: Make the module more easy to adapt to
+  new GTK+ paths.
+
+  * library/GenerateSymbols.tcl:
+  * library/tilegtk.tcl:
+  * generic/tileGtk_Init.cpp: Completed the ability to dynamically
+  load GTK+ libraries under windows.
+
+07 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * library/GenerateSymbols.tcl:
+  * library/tilegtk.tcl:
+  * generic/tileGtk_Init.cpp: Completed the ability to dynamically
+  load GTK+ libraries under linux.
+
+07 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * library/GenarateSymbols.tcl: Added a new script that generates
+  generic/tileGtk_Symbols.h, generic/tileGtk_Symbols.h from GTK/Glib/GDK
+  functions used in code. The generated files map all glib/gdk/gtk
+  functions to pointers, if symbol TILEGTK_LOAD_GTK_DYNAMICALLY is
+  defined. In general, to enable this feature, LOAD_GTK_DYNAMICALLY must
+  be set to ON in CMakeLists.txt.
+  Note that this support is still incomplete.
+
+06 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * New widgets: SizeGrip, Paned, ToolButton, Notebook & Combobox.
+
+05 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * Updates: Scrollbars, Scales & ProgressBar widgets added.
+
+03 Aug 2008  Georgios Petasis  <petasis@iit.demokritos.gr>
+  * Started the tile-gtk theme.
